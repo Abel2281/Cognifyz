@@ -1,0 +1,291 @@
+@import url("clash-display.css");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'ClashDisplay',sans-serif;
+}
+/*--Navbar--*/
+.navbar{
+  background-color: #A7BEAE;
+}
+hr{
+  height: 2px;
+  background-color: #1e3050;
+  border-radius: 2px;
+}
+.btns{
+  border: none;
+  outline-style: solid;
+  outline-color: #A7BEAE;
+  outline-width: thin;
+  background-color: #E7E8D1;
+  border-radius: 12px;
+  padding: 10px;
+}
+.btns:hover{
+  background-color: #A7BEAE;
+  color: #E7E8D1;
+}
+
+/*--Hero--*/
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.herosec h1{
+  border-right: 1px solid #1a1919;
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+ 
+}
+.herosec h3{
+  animation: fadeRight ;
+  animation-duration: 2s; 
+}
+.herosec button{
+  animation: fadeUp ;
+  animation-duration: 2s; 
+}
+
+/*--h3,h1--*/
+h3{
+  color: #545454;
+
+}
+h1{
+  font-weight: 600;
+}
+
+/*--About--*/
+#about{
+  padding: 30px;
+}
+#aboutcon{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  
+}
+#abouth1{
+  animation: fadeIn 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+  
+  
+
+}
+.aboutImg{
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+.aboutImg img{
+  max-width: 500px;
+  max-height: auto;
+  border: 5px solid #865e3c;
+  border-radius: 0% 25% 0% 25%;
+  animation: fadeLeft 2s linear;
+  animation-timeline: view();
+  
+}
+.aboutContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeRight 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+
+/*--Key Features--*/
+#key_comonents{
+   padding: 30px;
+}
+.card{
+  width: 300px;
+  height: 300px;
+  background-color: #E7E8D1;
+  border: solid;
+  border-color: #A7BEAE;
+  border-radius: 12px;
+  text-align: center;
+  margin: 20px;
+  animation: fadeIn 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+#key_comonents h1{
+  animation: fadeIn 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+.card:hover{
+  background-color: #A7BEAE;
+  color:black ;
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+/*--Qualification--*/
+#qualifications{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qual{
+  display: flex;
+  flex-direction: column;
+  
+}
+#qualifications h1{
+  animation: fadeIn 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+.q-card{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  animation: fadeRight 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+.image-container{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img{
+  width: 40px;
+  height: 40px;
+}
+.text-container{
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.image-container img:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+/*--Footer--*/
+#footer{
+  background-color: #A7BEAE;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeUpBig 2s linear;
+  animation-timeline: view(100px);
+  animation-range: entry;
+}
+.list h6{
+  padding: 10px;
+}
+
+/*--h1,h2,h3,h4,h5,h6-Hover--*/
+h1,h2,h3,h4,h5,h6:hover{
+  transform: scale(1.1);
+  transition-duration:0.3s;
+  color:#1a1919;
+}
+
+
+/*--Animations--*/
+@keyframes typing{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes fadeIn{
+  from{
+    scale: 0.8;
+    opacity: 0;
+  }
+  to{
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes fadeDown{
+  from{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeLeft{
+  from{
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeRight{
+  from{
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeUpBig{
+  from{
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+}
